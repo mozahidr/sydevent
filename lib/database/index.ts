@@ -13,6 +13,7 @@ export const connectToDatabase = async () => {
         dbName: 'sydevent',
         bufferCommands: false,
     })
+ 
     cached.conn = await cached.promise;
 
     return cached.conn;
